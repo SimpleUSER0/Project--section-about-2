@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+}
+
+.composition__photo {
+  position: relative;
+  width: 55%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline-offset: 1rem;
+  border-radius: 2px;
+}
+
+.composition__photo-1 {
+  top: -1rem;
+  left: -2rem;
+}
+
+.composition__photo-2 {
+  top: -11rem;
+  left: 13rem;
+}
+
+.composition__photo-3 {
+  top: -19rem;
+  left: 4rem;
+}
+
+.composition__photo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 10;
+  outline: .5rem solid #ffb900;
+}
+
+.button {
+  color: #ffb900;
+  text-decoration: none;
+  border-bottom: 1px solid #ffb900;
+  padding: 5px 10px;
+}
+
+.button:hover {
+  background-color: #ffb900;
+  color: white;
+}
+
+.heading-span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+}
+
+.heading-secendary {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffb900), to(#ff7730));
+  background-image: linear-gradient(to right, #ffb900, #ff7730);
+  color: transparent;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  font-size: 2.3rem;
+  margin-top: 3rem;
+}
+
+.heading-secendary:hover {
+  -webkit-transform: skewX(1.2deg) skewY(1.5deg);
+          transform: skewX(1.2deg) skewY(1.5deg);
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.row {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.row .col-1-of-2 {
+  width: calc( (100% - 3rem ) / 2);
+}
+
+.row .col-1-of-3 {
+  width: calc( (100% - 2 * 3rem ) / 3);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 3rem ) / 4);
+}
+
+.row .col-2-of-3 {
+  width: calc( 2 * ((100% - 2 * 3rem ) / 3 ) + 3rem);
+}
+
+.row .col-2-of-4 {
+  width: calc( 2 *(100% - 3 * 3rem ) / 4 + 3rem);
+}
+
+.row .col-3-of-4 {
+  width: calc( 3 * (100% - 3 * 3rem ) / 4 + 2 * 3rem);
+}
+/*# sourceMappingURL=Section-About.css.map */
